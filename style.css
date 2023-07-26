@@ -1,0 +1,415 @@
+@font-face {
+    font-family: moranga;
+    src: url(moranga.ttf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-Semibold.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(Gilroy-Bold.ttf);
+}
+
+/* variables */
+:root {
+    /* basic colors */
+    --primaryColor: #ffff;
+    --backgroundColor: #000000;
+    --secBackgroundColor: #222222;
+    --thirdBackgroundColor: #333333;
+    --primaryButtonCOlor: #40D2EF;
+    --secandaryButtonCOlor: #F65858;
+    --lighOrangeColor: #F6BA53;
+
+    /* basic fontfont family */
+    --primaryFontFamily: moranga;
+    --secondryFontFamily: Gilroy;
+    --secondryFontFamilyBold: Gilroy-Bold;
+
+    /* basic typography  */
+    --extraLarge: 9vw;
+    --h1: 6vw;
+    --h2: 4vw;
+    --h3: 2vw;
+    --h4: 1.5vw;
+    --h5: 1vw;
+
+}
+
+/* ganral styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--primaryColor);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+ul,
+li {
+    list-style: none;
+    color: var(--primaryColor);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--primaryFontFamily);
+}
+
+
+section {
+    padding: 3rem;
+}
+
+/* reusable classes */
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+.flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.normalButton {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 2vw;
+    font-family: var(--secondryFontFamily);
+    width: fit-content;
+}
+
+.highlight {
+    color: var(--primaryButtonCOlor);
+}
+
+.highlight2 {
+    color: var(--secandaryButtonCOlor);
+}
+
+.highlight3 {
+    color: var(--lighOrangeColor);
+}
+
+/* header styling */
+
+#header {
+    height: 150px;
+    background-color: transparent;
+}
+
+.Nav {
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 2rem 1rem;
+}
+
+.logo {
+    font-size: var(--h4);
+    letter-spacing: .3rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.arrow svg {
+    height: 10vh;
+    color: white;
+    transform: rotate(0deg);
+}
+
+.primaryButton {
+    padding: 1rem 1.5rem;
+    background-color: var(--primaryButtonCOlor);
+    border-radius: 50px;
+    box-shadow: 0px 0px 16px var(--primaryButtonCOlor);
+    font-size: var(--h5);
+}
+
+
+.heroSection {
+    position: relative;
+    flex-direction: column;
+}
+
+.heroSection h1 {
+    font-size: var(--h2);
+    letter-spacing: .3rem;
+    width: 800;
+    margin: 1rem 0;
+}
+
+.heroImg {
+    width: 70vw;
+}
+
+.heroImg img {
+    object-fit: cover;
+}
+
+.slidingText {
+    justify-content: space-around;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+}
+
+.slidingText h1 {
+    word-spacing: 2rem;
+    font-size: var(--h1);
+    margin: 0 1rem;
+}
+
+.slidingText::-webkit-scrollbar {
+    display: none;
+}
+
+.about {
+    flex-direction: column;
+    width: 100%;
+}
+
+.about h1 {
+    opacity: 1;
+    flex-direction: column;
+    word-spacing: 2rem;
+    font-size: var(--h2);
+    margin: 0 1rem;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+#skillsection {
+    background-color: var(--secBackgroundColor);
+}
+
+.skills {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.skills h1 {
+    font-size: var(--h1);
+    font-family: var(--secondryFontFamilyBold);
+}
+
+.skills h3 {
+    font-size: var(--h3);
+    font-family: var(--secondryFontFamilyBold);
+}
+
+.icone,
+.icone2 {
+    gap: 10px;
+}
+
+.iconeLogo img {
+    height: 10vh;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--primaryColor);
+    padding: .1rem;
+}
+
+
+#craftsection {
+    background-color: var(--thirdBackgroundColor);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.craftdiv {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.text h1 {
+    font-size: var(--h2);
+    font-family: var(--secondryFontFamilyBold);
+}
+
+.text h3 {
+    font-size: var(--h3);
+    font-family: var(--secondryFontFamilyBold);
+}
+
+.craft {
+    width: 100%;
+    background-color: var(--primaryColor);
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.craft img {
+    width: auto;
+    height: 30vh;
+    box-shadow: 0 0 .5rem var(--backgroundColor);
+}
+
+.craftdiv a {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
+#artworksection {
+    background-color: var(--secBackgroundColor);
+}
+
+.artworkdiv h1 {
+    font-size: var(--h2);
+    font-family: var(--secondryFontFamilyBold);
+    margin-block: 2rem;
+}
+
+
+.artworkcontainet {
+    position: relative;
+    justify-content: space-between;
+}
+
+.artworkcontainet h2 {
+    font-size: var(--h3);
+    color: var(--primaryColor);
+    padding: .5rem 0;
+    transition: all ease 1s;
+    z-index: 1;
+}
+
+.artworkcontainet::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: var(--primaryColor);
+    transition: width 0.5s;
+}
+
+.artworkcontainet:hover::before {
+    width: 100%;
+}
+
+.artworkcontainet:hover>h2 {
+    color: var(--backgroundColor);
+}
+
+
+#contactUsSection {
+    background-color: var(--thirdBackgroundColor);
+}
+
+.contactUs h1 {
+    font-size: var(--extraLarge);
+    font-family: var(--secondryFontFamilyBold);
+}
+
+.contactUs a:hover {
+    text-decoration: line-through;
+}
+
+.cradit h3 {
+    font-size: var(--h3);
+    font-family: var(--secondryFontFamilyBold);
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .aboutButton a>img {
+        width: 250px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    :root{
+        --extraLarge: 18vw;
+        --h1: 10vw;
+        --h2: 8vw;
+        --h3: 4vw;
+        --h4: 3vw;
+        --h5: 2vw;
+    }
+
+
+
+    .icone,
+    .icone2 {
+        flex-wrap: wrap;
+    }
+
+    section {
+        padding: 1rem;
+    }
+    .about h1{
+        padding: 0rem;
+    }
+}
+
+@media screen and (max-width:481px) {
+    .aboutButton a>img {
+        width: 125px;
+        height: 60px;
+    }
+    .craftdiv img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .nav {
+        padding: .5rem;
+    }
+}
