@@ -346,6 +346,7 @@ section {
 
 #contactUsSection {
     background-color: var(--thirdBackgroundColor);
+    min-height:100% ;
 }
 
 .contactUs h1 {
