@@ -1,3 +1,28 @@
+function loder() {
+    var a = 0
+    setInterval(() => {
+        a = a + Math.floor(Math.random() * 15)
+        if (a < 100) {
+            document.querySelector(".loder h1").innerHTML = a + "%"
+        }
+        else {
+            a = 100
+            document.querySelector(".loder h1").innerHTML = a + "%"
+        }
+    },150);
+}
+
+
+var tl = gsap.timeline()
+tl.to(".loder h1",{
+    delay:1,
+    duration:1,
+    onStart:loder(),
+}).to(".loder",{
+    top:"-100vh",
+    delay:0.5,
+    duration:1,
+})
 
 
 gsap.to(".slidingText h1", {

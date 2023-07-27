@@ -76,15 +76,10 @@ h3 {
     font-family: var(--primaryFontFamily);
 }
 
-
-section {
-    padding: 3rem;
-}
-
 /* reusable classes */
 
 .container {
-    max-width: 1200px;
+    padding: 2rem;
     margin-inline: auto;
 }
 
@@ -125,6 +120,39 @@ section {
 .highlight3 {
     color: var(--lighOrangeColor);
 }
+
+.loder{
+    position: relative;
+    background-color: var(--backgroundColor);
+    min-height: 100vh;
+    width:100%;
+    z-index: 1000;
+}
+.loder h1{
+font-size: 10vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* header styling */
 
