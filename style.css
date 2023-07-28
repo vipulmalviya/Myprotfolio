@@ -75,9 +75,10 @@ h2,
 h3 {
     font-family: var(--primaryFontFamily);
 }
-Section {
-    Padding:2rem;
-} 
+
+section{
+    padding: 2rem;
+}
 /* reusable classes */
 
 .container {
@@ -132,6 +133,29 @@ Section {
 .loder h1{
 font-size: 10vw;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* header styling */
 
 #header {
@@ -190,7 +214,9 @@ font-size: 10vw;
 .heroImg img {
     object-fit: cover;
 }
-
+#slidingText{
+    padding:0 ;
+}
 .slidingText {
     justify-content: space-around;
     width: 100%;
