@@ -47,17 +47,89 @@
 //     duration:1,
 // })
 
+const ima = document.querySelectorAll(".im")
+document.querySelector(".craft").addEventListener("mousemove", (dets) => {
+    ima.forEach(elem => {
+        const position = elem.getAttribute("value")
+        const x = (window.innerWidth - dets.clientX * position) / 100;
+        const y = (window.innerHeight - dets.clientY * position) / 100;
+        elem.style.transform = `translatex(${x}px) translatey(${y}px)`;
+    });
+});
 
-gsap.to(".Nav .logo , .right", {
-    opacity:0,
-    duration: 3,
+
+
+const toggleButton = document.querySelector(".navbar-toggle");
+const navbarLinks = document.querySelector(".navbar-links");
+
+toggleButton.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var tl = gsap.timeline({
     scrollTrigger: {
-        trigger: ".slidingText h1",
-        scroller: "body",
-        scrub: 0.7
-
+        trigger: ".heroSection",
+        pin: true,
+        scrub: true,
+        // markers: true,
+        start: "50% 50%",
+        end: "150% 50%"
     }
-})
+});
+
+tl.to(".topcontent", {
+    rotateX: "110deg",
+    opacity: 0,
+    ease: "power1",
+    duration: 5,
+}, "a").to(".heroImg video", {
+    width: "100%",
+    height: "100%",
+    duration: 8,
+    ease: "power1",
+    delay: 2,
+
+}, "a").to(".bottomcontent", {
+    rotationX: "-110deg",
+    opacity: 0,
+    ease: "power1",
+    duration: 5,
+}, "a")
+
+
+// gsap.to(".Nav .logo , .right", {
+//     opacity: 0,
+//     duration: 3,
+//     scrollTrigger: {
+//         trigger: ".slidingText h1",
+//         scroller: "body",
+//         scrub: 0.7
+
+//     }
+// })
 gsap.to(".slidingText h1", {
     x: -500,
     duration: 3,
@@ -67,20 +139,6 @@ gsap.to(".slidingText h1", {
         scrub: 0.7
     }
 })
-
-gsap.to(".arrow", {
-    rotate: 90,
-    duration: 1,
-    backgroundColor: "#00000045",
-    borderRadius: 50,
-    scrollTrigger: {
-        trigger: ".arrow",
-        scroller: "body",
-        start: "bottom 15%",
-        scrub: 1
-    }
-})
-
 gsap.from(".about h1:nth-child(1)", {
     scrollTrigger: {
         trigger: ".about h1:nth-child(1)",
@@ -149,28 +207,63 @@ gsap.from(".icone2 img", {
 
 
 
+var crsr = document.querySelector("#cursor");
+window.addEventListener("mousemove", (dets) => {
+    const translateX = (dets.clientX);
+    const translateY = (dets.clientY);
+    crsr.style.transform = `translateX(${translateX}px) translateY(${translateY}px)`;
+});
+var arrow = document.querySelector(".arrow");
+const position = parseFloat(arrow.getAttribute("value"))
+window.addEventListener("mousemove", (dets) => {
+    const translateX = (window.innerWidth - dets.clientX * position) / 100;
+    const translateY = (window.innerHeight - dets.clientY * position) / 100;
+    arrow.style.transform = `translateX(${translateX}px) translateY(${translateY}px)`;
+});
+
+const craft = document.querySelector(".craft")
+craft.addEventListener("mouseenter", () => {
+    crsr.style.borderColor = "black"
+    arrow.style.backgroundColor = "black"
+})
+craft.addEventListener("mouseleave", () => {
+    crsr.style.borderColor = "white"
+    arrow.style.backgroundColor = "white"
+})
+
+const listitems = document.querySelectorAll(".listitems")
+listitems.forEach(ele => {
+    ele.addEventListener("mouseenter", () => {
+        crsr.style.borderColor = "transparent"
+        arrow.style.backgroundColor = "transparent"
+    })
+    ele.addEventListener("mouseleave", () => {
+        crsr.style.borderColor = "white"
+        arrow.style.backgroundColor = "white"
+    })
+});
+
+const a = document.querySelector(".hello")
+a.addEventListener("mouseenter", () => {
+    crsr.style.display = "none"
+})
+a.addEventListener("mouseleave", () => {
+    crsr.style.display = "block"
+})
 
 
-
-
-
-const desktopLink = document.querySelector('.desktop');
-
-// Check screen width on page load and whenever the window is resized
-function checkScreenWidth() {
-  const screenWidth = window.innerWidth || document.documentElement.clientWidth;
-
-  if (screenWidth >= 768) { // Adjust the desired breakpoint
-    desktopLink.addEventListener('click', openLink);
-  } else {
-    desktopLink.removeEventListener('click', openLink);
-  }
-}
-
-function openLink(event) {
-  event.preventDefault();
-     window.open(desktopLink.href="https://vipulmalviya.github.io/snackit/", '_blank');
-}
-
-checkScreenWidth();
-window.addEventListener('resize', checkScreenWidth);
+// const artworkcontainet = document.querySelectorAll(".artworkcontainet")
+// const artworksi = document.querySelector(".i")
+// artworkcontainet.forEach(elem => {
+//     elem.addEventListener("mousemove", (dets) => {
+//         const x = dets.clientX
+//         const y = dets.clientY;
+//         artworksi.style.transform = `translateX(${x}px) translateY(${y}px)`;
+//         elem.addEventListener("mouseenter",()=>{
+//             artworksi.style.display = "block"
+//         })
+//         elem.addEventListener("mouseleave",()=>{
+//             artworksi.style.display = "none"
+//         })
+//     })
+// });

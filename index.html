@@ -10,39 +10,46 @@
 </head>
 
 <body>
-    <header id="header">
-        <!-- <div class="loder flexcenter">
-            <h1>0%</h1>
-        </div> -->
-        <div class="Nav flex">
-            <div class="logo">
-                <h1>Vipul<br>Malviya</h1>
-            </div>
-            <a href="#" class="arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62">
-                    <g fill="currentColor" fill-rule="nonzero">
-                        <path
-                            d="M31 .5C14.155.5.5 14.155.5 31S14.155 61.5 31 61.5 61.5 47.845 61.5 31 47.845.5 31 .5zm0 1c16.292 0 29.5 13.208 29.5 29.5S47.292 60.5 31 60.5 1.5 47.292 1.5 31 14.708 1.5 31 1.5z">
-                        </path>
-                        <path
-                            d="M38.974 33.704c-1.733-.021-5.35-1.67-15.577-1.712 3.83.877 7.425 2.418 7.318 4.622-.043 1.113-.728 1.926-1.947 1.947-.471 0-.963-.15-1.37-.556-1.37-1.37-1.284-4.922-6.098-6.398l-.407-.107c5.221-1.37 5.2-4.986 6.505-6.462.385-.428.942-.556 1.412-.556 1.156 0 1.883.813 1.905 1.947.021 2.204-3.66 3.787-7.51 4.643 10.377-.064 14.036-1.712 15.748-1.669 1.326 0 2.375.963 2.353 2.14 0 1.24-1.005 2.16-2.332 2.16z">
-                        </path>
-                    </g>
-                </svg>
-            </a>
-            <a href="#" class="right primaryButton flexcenter">
-                <h4>get my resume offline</h4>
-            </a>
-        </div>
+    <div id="cursor" >
+        <div class="arrow" value="4"></div>
+    </div>
+    <header id="header flex">
+        <nav class="navbar flex">
+            <div class="navbar-logo">Vipul Malviya</div>
+            <ul class="navbar-links flex">
+                <li class="listitems"><a href="#page1">Home</a></li>
+                <li class="listitems"><a href="#page2">About</a></li>
+                <li class="listitems"><a href="#skillsection">Services</a></li>
+                <li class="listitems"><a href="#contactUsSection">Contact</a></li>
+            </ul>
+            <div class="navbar-toggle">&#9776;</div>
+        </nav>
     </header>
     <main>
-        <section>
+        <section id="page1" >
             <div class="container heroSection flex">
-                <h1>Who the fuck is</h1>
-                <div class="heroImg">
-                    <img width="100%" src="img/SAVE_20230725_181537 (2).jpg" alt="">
+                <div class="herotop flex">
+                    <div class="topcontent flex">
+                        <h2>hello, i am vipul malviya</h2>
+                        <h3>your webdev partner</h3>
+                    </div>
                 </div>
-            </div>
+                <div class="heroImg flex">
+                    <video src="https://assets.website-files.com/63d3a5c57af34837d7bbb1a0/6407644d418722e08e114c7e_ilha-madeira-transcode.mp4" autoplay muted loop></video>
+                </div>
+                <div class="herobottom">
+                    <div class="bottomcontent flex">
+                        <h2>scroll down</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus possimus dolores nihil
+                            temporibus similique aliquid qui repudiandae rerum quam consequuntur, incidunt eveniet
+                            numquam adipisci, inventore quibusdam expedita. Corporis, iusto dolore.</p>
+                        <!-- <span class="arrow">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span> -->
+                    </div>
+                </div>
         </section>
         <section id="slidingText">
             <div class="container flexcenter slidingText">
@@ -52,7 +59,7 @@
                 <h1>vipul Malviya ? </h1>
             </div>
         </section>
-        <section>
+        <section id="page2">
             <div class="container flex about">
                 <h1>Hi!</h1>
                 <h1>I'm Vipul, a full stack web developer and a freelance UI/UX designer.</h1>
@@ -127,28 +134,32 @@
             </div>
         </section>
         <section id="craftsection">
-            <div class="container craftdiv flex">
+            <div class="container craftdiv flex ">
                 <div class="text">
                     <h1>crafted with <span class="highlight2">Love</span>.</h1>
                     <h3>these are few of my recent works</h3>
                 </div>
                 <div class="craft flex">
-                    <img width="100%" src="img/bulb.webp" alt="">
-                    <img width="100%" src="img/Lpdesign.gif" alt="">
-                    <img width="100%" src="img/air-max.webp" alt="">
-                    <img width="100%" src="img/girlwhocode1.webp" alt="">
-                    <img width="100%" src="img/shery.webp" alt="">
-                    <img width="100%" src="img/barba (1).gif" alt="">
-                    <img width="100%" src="img/fluid.webp" alt="">
-                    <img width="100%" src="img/bond.webp" alt="">
-                    <img width="100%" src="img/des1.webp" alt="">
+                    <img width="100%" value="5" class="im img1" src="img/bulb.webp" alt="">
+                    <img width="100%" value="3" class="im img2" src="img/Lpdesign.gif" alt="">
+                    <img width="100%" value="4" class="im img3" src="img/air-max.webp" alt="">
+                    <img width="100%" value="3" class="im img4" src="img/girlwhocode1.webp" alt="">
+                    <img width="100%" value="4" class="im img5" src="img/shery.webp" alt="">
+                    <img width="100%" value="6" class="im img6" src="img/barba (1).gif" alt="">
+                    <img width="100%" value="7" class="im img7" src="img/fluid.webp" alt="">
+                    <img width="100%" value="4" class="im img8" src="img/bond.webp" alt="">
+                    <img width="100%" value="2" class="im img9" src="img/des1.webp" alt="">
+                    <img width="100%" value="6" class="im img10"
+                        src="https://backoffice.redsofa.com/media/hiyf010z/concreteclub.gif" alt="">
+                    <img width="100%" value="3" class="im img11"
+                        src="https://backoffice.redsofa.com/media/kt0fjf35/joco_allforukraine.gif" alt="">
                 </div>
-                <a target="_blank" href="https://github.com/vipulmalviya" class="flex">
+                <a target="_blank" href="https://github.com/vipulmalviya" class="flex gitbtn">
                     <img src="img/worklink.png" alt="">
                 </a>
             </div>
         </section>
-        <section id="artworksection">
+        <section id="artworksection" class="hello">
             <div class="artworkdiv container ">
                 <h1>watch my <span class="highlight3">more</span> artwork.</h1>
                 <div class="artworks">
@@ -173,25 +184,16 @@
                     </a>
                     <hr>
                     <hr>
-                    <a target="_blank" href="https://vipulmalviya.github.io/steasy/"
-                        class="artworkcontainet flex">
+                    <a target="_blank" href="https://vipulmalviya.github.io/steasy/" class="artworkcontainet flex">
                         <h2>2023</h2>
                         <h2>steasy</h2>
                         <h2>Advance tifine box website</h2>
                     </a>
                     <hr>
-                    <a target="_blank" href="https://vipulmalviya.github.io/text-utils/"
-                        class="artworkcontainet flex">
+                    <a target="_blank" href="https://vipulmalviya.github.io/text-utils/" class="artworkcontainet flex">
                         <h2>2023</h2>
                         <h2>text-utils</h2>
                         <h2> Enhance,Format and Manipulate Your Text</h2>
-                    </a>
-                    <hr>
-                    <a target="_blank" href="https://vipulmalviya.github.io/NewsWave/"
-                        class="artworkcontainet flex">
-                        <h2>2023</h2>
-                        <h2>NewsWave</h2>
-                        <h2>get your mornigh news!</h2>
                     </a>
                     <hr>
                 </div>
@@ -202,12 +204,12 @@
                 <h1>you can get in touch with me via <a href="https://mail.google.com/mail/u/0/#inbox"
                         class="highlight2">mail</a> or <a href="https://www.instagram.com/_vipul_lohar/?next=%2F"
                         class="highlight">instagram</a> or
-                    <a href="" class="highlight3">linkdin</a>.
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="highlight3">linkdin</a>.
                 </h1>
             </div>
             <div class="cradit flexcenter">
                 <h3>
-                    created with ❤️ by me
+                    created ❤️ by me
                 </h3>
             </div>
         </section>
@@ -218,7 +220,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
         integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="script.js"></script>
 </body>
 
