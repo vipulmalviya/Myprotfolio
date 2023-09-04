@@ -606,7 +606,7 @@ section {
     color: var(--backgroundColor);
 }
 
-.artworks img{
+.artworks img {
     position: absolute;
     object-fit: contain;
     height: 20vh;
@@ -646,11 +646,12 @@ section {
     transition: transform cubic-bezier(0.19, 1, 0.22, 1)1s;
     pointer-events: none;
 }
-#cursor .arrow{
+
+#cursor .arrow {
     position: absolute;
     height: 2vh;
     width: 2vh;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: white;
     transition: transform cubic-bezier(0.19, 1, 0.22, 1)1s;
 }
@@ -680,8 +681,7 @@ section {
 }
 
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width:1200px) {
     :root {
         --extraLarge: 18vw;
         --h1: 10vw;
@@ -690,6 +690,31 @@ section {
         --h4: 3vw;
         --h5: 2vw;
     }
+
+    #cursor {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    :root {
+        --extraLarge: 18vw;
+        --h1: 8vw;
+        --h2: 5vw;
+        --h3: 3vw;
+        --h4: 2vw;
+        --h5: 1vw;
+    }
+
+    
+    /* .herotop{
+        top: 0;
+    }
+    .herobottom{
+        bottom: 0;
+    } */
 
     .icone,
     .icone2 {
@@ -726,6 +751,13 @@ section {
 }
 
 @media screen and (max-width:481px) {
+
+    /* .herotop{
+        top: 6rem;
+    }
+    .herobottom{
+        bottom: 6rem;
+    } */
     .aboutButton a>img {
         width: 125px;
         height: 60px;
